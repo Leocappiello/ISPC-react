@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Combobox from './components/combobox/Combobox';
+import Datapicker from './components/datapicker/Datapicker';
+import Input from './components/input/Input';
 
 function App() {
+ 
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Datapicker date="2022-01-02"/>
+      <Combobox/>
+      <Input/>
     </div>
   );
 }
